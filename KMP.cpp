@@ -4,7 +4,6 @@
 #include <vector>
 using namespace std;
 
-// Build LPS array (Longest Prefix Suffix)
 void buildLPS(string pat, vector<int> &lps) {
     int len = 0, i = 1;
     lps[0] = 0;
@@ -26,7 +25,6 @@ void buildLPS(string pat, vector<int> &lps) {
     }
 }
 
-// KMP Pattern Search
 void KMP(string txt, string pat) {
     int n = txt.length();
     int m = pat.length();
